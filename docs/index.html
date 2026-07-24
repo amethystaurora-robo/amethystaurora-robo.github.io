@@ -1,61 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Lab — Research & Projects</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{
+      --accent:#0b63d6;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f7f8fb;
+      --radius:10px;
+      --max-width:1000px;
+      --gap:18px;
+      color-scheme: light;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.45;}
+    .container{max-width:var(--max-width);margin:36px auto;padding:0 20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px;}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#014f9a);display:inline-block}
+    h1{margin:0;font-size:1.15rem}
+    nav a{margin-left:12px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a.btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    main{margin-top:8px}
+    .hero{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:22px}
+    .hero .intro{flex:1 1 320px;background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,18,28,0.06);}
+    .hero .actions{display:flex;gap:10px;margin-top:12px}
+    .btn-link{display:inline-block;padding:8px 12px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap);margin-top:12px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,28,0.06)}
+    .card h3{margin:0 0 8px 0;font-size:1rem}
+    .meta{color:var(--muted);font-size:0.9rem;margin-bottom:10px}
+    .card .links{display:flex;gap:8px;flex-wrap:wrap}
+    .small-btn{padding:6px 10px;background:#eef5ff;color:var(--accent);border-radius:8px;text-decoration:none;font-weight:600}
+    .members{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
+    .member{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:var(--card)}
+    .avatar{width:56px;height:56px;border-radius:10px;background:#ddd;flex:0 0 56px;object-fit:cover}
+    .member .info{font-size:0.95rem}
+    .pubs{margin-top:18px}
+    .pubs li{margin-bottom:8px}
+    footer{margin:36px 0 20px;color:var(--muted);font-size:0.9rem;text-align:center}
+    /* accessibility */
+    a:focus, button:focus{outline:3px solid rgba(11,99,214,0.25);outline-offset:3px}
+    @media (max-width:640px){
+      header{flex-direction:column;align-items:flex-start}
+      .hero{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <h1>XFlow Lab</h1>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </header>
+
+
+
+      <section>
+        <h2>Recent projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project A</h3>
+            <div class="meta">2024 — CV / Optimization</div>
+            <p>Short summary. One line.</p>
+            <div class="links">
+              <a class="small-btn" href="projects/project-a.html">Details</a>
+              <a class="small-btn" href="https://github.com/your-repo/project-a" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Project B</h3>
+            <div class="meta">2023 — Systems</div>
+            <p>Short summary.</p>
+            <div class="links">
+              <a class="small-btn" href="projects/project-b.html">Details</a>
+              <a class="small-btn" href="https://github.com/your-repo/project-b" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <!-- add more project cards -->
+        </div>
+      </section>
+
+      <section style="margin-top:24px">
+        <h2>Team</h2>
+        <div class="members">
+          <div class="member">
+            <img src="people/alice.jpg" alt="Alice" class="avatar">
+            <div class="info">
+              <strong>Alice Smith</strong><br>
+              Postdoc — ML & Optimization<br>
+              <a href="mailto:alice@example.com">alice@example.com</a>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="people/bob.jpg" alt="Bob" class="avatar">
+            <div class="info">
+              <strong>Bob Lee</strong><br>
+              PhD Student — Robotics<br>
+              <a href="mailto:bob@example.com">bob@example.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pubs" aria-labelledby="pubs-heading">
+        <h2 id="pubs-heading">Selected publications</h2>
+        <ul>
+          <li>
+            Smith, A.; Lee, B. <strong>FastNet: X for Y</strong>. Proceedings of Z (2025). 
+            <a href="papers/fastnet.pdf" target="_blank" rel="noopener">PDF</a> •
+            <a href="https://doi.org/..." target="_blank" rel="noopener">DOI</a>
+          </li>
+          <li>
+            Lee, B.; Smith, A. <strong>Robust Control for Q</strong>. Journal of R (2024). 
+            <a href="papers/robust.pdf" target="_blank" rel="noopener">PDF</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Your Lab — <a href="https://github.com/your-repo" target="_blank" rel="noopener">GitHub</a> — Content licensed CC BY 4.0
+    </footer>
+  </div>
+</body>
+</html>
+
 
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Image test</title>
+  <title>Test</title>
 </head>
 <body>
-  <p>
-    xFlow is a research group led by Dr Bruño Fraga whose focus is modelling complex
-    flows for environmental and healthcare applications. We develop in-house algorithms
-    and numerical models to solve multiphase flows, with a particular emphasis in
-    particle-laden or dispersed flows, where one of the phases is split in many small
-    portions and submerged in a fluid matrix. We have a solid track record creating
-    models for fluid-solid interaction, four-way coupled particle-laden flows,
-    Eulerian-Lagrangian frameworks or chemistry-fluids coupling among other things.
-    In terms of applications, some key current topics are the spread of expiratory
-    bioaerosols, transport of microplastics in freshwater systems, flow through
-    porous media, multiphase turbulence and bubble plume dynamics. Check out projects
-    and publications below to learn more, and get in touch if you want to try our
-    base model, MultiFlow3D.
-  </p>
-
-  <img src="Pic_1.jpg" alt="Description of image">
-  <h3>Projects</h3>
-  <h2>BreatHE IN</h2> - Funded by EPSRC, BreatHE IN will focus on improvements to the built
-environment in both existing and new buildings. Officially launched in November
-2025, BreatHE IN is led by the University of Birmingham and supported by partners
-including Oxford, Cardiff, Nottingham, UCL, Bath, the UKHSA, Hertfordshire County
-Council, Siemens, ANSYS, BIOREME and the Met Office. The push towards airtight
-indoor spaces, to preserve energy and isolate us from the outside weather and
-noise, can also have undesired consequences. BreatHE IN provides a platform and
-resources to facilitate the interaction between researchers and stakeholders from
-different disciplines and sectors and to train the new generation of experts to design
-healthier indoor environments. BreatHE IN hosted its first interdisciplinary sandpit on
-Wednesday 29 April at the University of Birmingham, bringing together 75
-participants from across the UK, including researchers, industry professionals and
-
-public contributors from diverse disciplines, reflecting a commitment to integrating
-knowledge across sectors to address complex challenges in indoor air quality and
-the built environment. A total of 25 feasibility funding applications were submitted
-following the sandpit, competing for a £129k in flexible funding.
-  
-  <img src="pic2.png.jpg" alt="Description of image">
-
-  <b>Fusion Forest</b> - Fusion Forest will provide strategies and tools to enhance the
-natural immunity of forests and halt tree epidemics. We combine knowledge on tree
-immunity with ecology and physics. We will increase forest resilience by proposing
-combinations of tree species and priming of defence. We will bring together
-ecological and physical modelling to create a tool – ForestFlow – to predict the
-spread of fungal spores and design physical barriers to it. The decisions we make
-today will determine the forest landscapes of future generations. Fusion Forest will
-prevent high disease pressures and enhance tree immunity ahead of the occurrence
-of outbreaks.
-  
-  <img src="pic3.png" alt="Description of image">
 
 
+   <img src="Pic_1.jpg" alt="Description of image">
+
+<a href="projects.html" class="btn">Projects</a>
+<a href="members.html" class="btn">Members</a>
 
 </body>
 </html>
