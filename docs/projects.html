@@ -9,6 +9,42 @@
           </div>
         </div>
 
+              body{margin:50;background:var(--bg);color:#0f1724;line-height:1.45;}
+    .container{max-width:var(--max-width);margin:36px auto;padding:0 20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px;}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#014f9a);display:inline-block}
+    h1{margin:0;font-size:1.15rem}
+    nav a{margin-left:12px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a.btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    main{margin-top:8px}
+    .hero{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:22px}
+    .hero .intro{flex:1 1 320px;background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,18,28,0.06);}
+    .hero .actions{display:flex;gap:10px;margin-top:12px}
+    .btn-link{display:inline-block;padding:8px 12px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap);margin-top:12px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,28,0.06)}
+    .card h3{margin:0 0 8px 0;font-size:1rem}
+    .meta{color:var(--muted);font-size:0.9rem;margin-bottom:10px}
+    .card .links{display:flex;gap:8px;flex-wrap:wrap}
+    .small-btn{padding:6px 10px;background:#eef5ff;color:var(--accent);border-radius:8px;text-decoration:none;font-weight:600}
+    .members{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
+    .member{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:var(--card)}
+    .avatar{width:56px;height:56px;border-radius:10px;background:#ddd;flex:0 0 56px;object-fit:cover}
+    .member .info{font-size:0.95rem}
+    .pubs{margin-top:18px}
+    .pubs li{margin-bottom:8px}
+    footer{margin:36px 0 20px;color:var(--muted);font-size:0.9rem;text-align:center}
+    /* accessibility */
+    a:focus, button:focus{outline:3px solid rgba(11,99,214,0.25);outline-offset:3px}
+    @media (max-width:640px){
+      header{flex-direction:column;align-items:flex-start}
+      .hero{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+
         <div style="min-width:240px">
           <div class="card">
             <h3>Featured project: FastNet</h3>
