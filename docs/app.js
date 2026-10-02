@@ -36,8 +36,7 @@ Check out projects and publications below to learn more, and get in touch if you
     <section class="page-section">
       <div class="section-heading">
         <p class="eyebrow">What we do</p>
-        <h1>Our Projects</h1>
-        <p>Discover some of the work our team is proud of.</p>
+        <h1>Research Projects</h1>
       </div>
       <div class="card-grid" id="projects-list"></div>
     </section>
@@ -46,8 +45,7 @@ Check out projects and publications below to learn more, and get in touch if you
 members: `
   <section class="page-section">
     <div class="section-heading">
-      <p class="eyebrow">The people behind the work</p>
-      <h1>Meet Our Members</h1>
+      <h1>Meet the Team</h1>
     </div>
 
     <section>
