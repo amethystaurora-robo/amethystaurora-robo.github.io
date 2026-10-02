@@ -402,6 +402,51 @@ h1 {
   }
 }
 
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.home-hero-content {
+  flex: 1;
+}
+
+.home-hero-image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: 320px;
+  object-fit: contain;
+  object-position: right center;
+}
+
+@media (max-width: 700px) {
+  .home-hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-hero-image {
+    flex-basis: auto;
+    justify-content: center;
+  }
+
+  .home-hero-image img {
+    height: auto;
+    max-height: 320px;
+    object-position: center;
+  }
+}
+
+
 
 
 
