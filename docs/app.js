@@ -92,7 +92,7 @@ const projects = [
   },
     {
     title: "IAQ-EMS",
-    description: "Led by Prof Christian Pfrang, the project "Indoor Air Quality Emissions & Modelling System (IAQ-EMS)" aims to develop ambitious software and data tools to advance the UK’s capacity for indoor air quality modelling, for estimation of emissions and exposure. IAQ-EMS aims to enable collaboration between the investigators involved to deliver a progressive suite of open access resources for the research community which is highly capable and readily extendable. Collaboration within this project will draw on the expertise of investigators which includes the areas of air quality monitoring, chemical and dynamical modelling, built environment and public health.",
+    description: `Led by Prof Christian Pfrang, the project "Indoor Air Quality Emissions & Modelling System (IAQ-EMS)" aims to develop ambitious software and data tools to advance the UK's capacity for indoor air quality modelling, for estimation of emissions and exposure.`,
     image: "../images/github3.jpg",
     alt: "The graphic shows air flow in different ventilation scenarios: unventilated, natural ventilation and mechanical extraction.",
     caption: "ChemFlow3D solves explicitly basic chemical reactions as the fluid flow evolves in space in time. It is built on the MultiFlow3D engine."
@@ -100,7 +100,7 @@ const projects = [
 ];
 
 // Add or edit team members here.
-const current-members-list = [
+const currentMembers = [
   {
     title: "Dr. Bruño Fraga",
     description: "Associate Professor, School of Engineering, University of Birmingham.",
@@ -135,7 +135,7 @@ const current-members-list = [
   }
 ];
 
-const past-members-list = [
+const pastMembers = [
   {
     title: "Dr. Zhen Liu",
     description: "Engineer at WSP",
@@ -160,7 +160,7 @@ const navButtons = document.querySelectorAll(".nav-button");
 function createCards(items) {
   return items.map(item => `
     <article class="card">
-      <img src="${item.image}" alt="${item.alt}">
+      ${item.image ? `<img src="${item.image}" alt="${item.alt || ""}">` : ""}
       <div class="card-content">
         <h2>${item.title}</h2>
         <p>${item.description}</p>
@@ -168,6 +168,7 @@ function createCards(items) {
     </article>
   `).join("");
 }
+
 
 function showPage(pageName) {
   const page = pages[pageName] ? pageName : "home";
@@ -178,8 +179,13 @@ function showPage(pageName) {
   }
 
   if (page === "members") {
-    document.querySelector("#members-list").innerHTML = createCards(members);
+    document.querySelector("#current-members-list").innerHTML =
+      createCards(currentMembers);
+
+    document.querySelector("#past-members-list").innerHTML =
+      createCards(pastMembers);
   }
+
 
   navButtons.forEach(button => {
     const isActive = button.dataset.page === page;
