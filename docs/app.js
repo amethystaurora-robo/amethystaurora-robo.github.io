@@ -11,6 +11,9 @@ Check out projects and publications below to learn more, and get in touch if you
         <button class="primary-button" type="button" data-page="projects">
           Explore our projects
         </button>
+        <button class="primary-button" type="button" data-page="projects">
+          Meet the Team
+        </button>
       </div>
 
       <img
