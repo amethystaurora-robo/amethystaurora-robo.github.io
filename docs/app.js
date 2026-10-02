@@ -194,6 +194,23 @@ function createCards(items) {
   `).join("");
 }
 
+function renderProjects() {
+  const container = document.getElementById("projects-list");
+
+  container.innerHTML = projects.map(project => `
+    <article class="project-row">
+      ${project.image ? `
+        <img class="project-image" src="${project.image}" alt="${project.title}">
+      ` : ""}
+      <div class="project-details">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+      </div>
+    </article>
+  `).join("");
+}
+
+
 
 function showPage(pageName) {
   const page = pages[pageName] ? pageName : "home";
