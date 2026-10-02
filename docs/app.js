@@ -16,15 +16,19 @@ Check out projects and publications below to learn more, and get in touch if you
         </button>
       </div>
 
-      <img
-        class="hero-image"
-        src="../images/github1.jpg"
-        alt="Expiratory particle dispersion by turbulent exhalation jet during speaking made by <a href="https://www.linkedin.com/in/aleksandra-monka-41115331b/">Aleksandra Monka</a>"
-      >  <figcaption>
+<figure class="hero-figure">
+  <img
+    class="hero-image"
+    src="images/github1.jpg"
+    alt="Particles dispersing in a turbulent exhalation jet during speaking"
+  >
+  <figcaption>
     Expiratory particle dispersion by turbulent exhalation jet during speaking.
-    Image by Aleksandra Monka.
+    Image by <a href="https://www.linkedin.com/in/aleksandra-monka-41115331b/"
+      target="_blank" rel="noopener noreferrer">Aleksandra Monka</a>.
   </figcaption>
 </figure>
+
     </section>
   `,
 
