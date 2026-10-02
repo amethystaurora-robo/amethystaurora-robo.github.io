@@ -169,11 +169,11 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+/* Card portraits/images: show the whole image rather than cropping it */
 .card img {
-  display: block;
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
   background: var(--accent);
 }
 
@@ -242,9 +242,8 @@ h1 {
 
 
 @media (max-width: 700px) {
-  .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+  .member-section-image img {
+    height: 260px;
   }
 
   .hero {
@@ -292,11 +291,13 @@ h1 {
   border-radius: 8px;
 }
 
+/* Project images: consistent thumbnail box, with the full image visible */
 .project-image {
   width: 220px;
   height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
+  object-fit: contain;
+  background: var(--accent);
+  border-radius: 12px;
   flex: 0 0 auto;
 }
 
@@ -310,18 +311,16 @@ h1 {
     align-items: stretch;
   }
 
-  .project-image {
-    width: 100%;
-    height: auto;
-    max-height: 240px;
-  }
 }
 
-.member-section-image {
-  max-width: 900px;
-  margin: 2rem auto 3rem;
-  padding: 0 1rem;
-  text-align: center;
+/* Member group photos: fixed-height box, cropped neatly */
+.member-section-image img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
 }
 
 .member-section-image img {
