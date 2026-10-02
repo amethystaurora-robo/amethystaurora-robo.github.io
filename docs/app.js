@@ -96,7 +96,7 @@ const projects = [
     {
     title: "IAQ-EMS",
     description: `Led by Prof Christian Pfrang, the project "Indoor Air Quality Emissions & Modelling System (IAQ-EMS)" aims to develop ambitious software and data tools to advance the UK's capacity for indoor air quality modelling, for estimation of emissions and exposure.`,
-    image: "../images/github3.jpg",
+    image: "../images/github3.png",
     alt: "The graphic shows air flow in different ventilation scenarios: unventilated, natural ventilation and mechanical extraction.",
     caption: "ChemFlow3D solves explicitly basic chemical reactions as the fluid flow evolves in space in time. It is built on the MultiFlow3D engine."
   }
@@ -107,18 +107,28 @@ const currentMembers = [
   {
     title: "Dr. Bruño Fraga",
     description: "Associate Professor, School of Engineering, University of Birmingham.",
-    image: "../images/github4.jpg",
-    alt: "Portrait of Bruño Fraga"
+    image: "../images/github4.png",
+    alt: "Portrait of Bruño Fraga",
+    links: [
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/bru%C3%B1o-fraga-a574795b/" },
+    { label: "Staff Profile", url: "https://www.birmingham.ac.uk/staff/profiles/civil/fraga-bruno" }
+  ]
   },
   {
     title: "Dr. Aleksandra Monka",
     description: "Research Associate, School of Engineering, University of Birmingham",
-    image: "../images/github5.jpg",
-    alt: "Portrait of Aleksandra Monka"
+    image: "../images/github5.png",
+    alt: "Portrait of Aleksandra Monka",
+    links: [
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/aleksandra-monka-41115331b/" }
+  ]
   },
     {
     title: "Dr. Emilie Cosway",
-    description: "Network Manager, School of Engineering, University of Birmingham"
+    description: "Network Manager, School of Engineering, University of Birmingham",
+    links: [
+    { label: "Research Profile", url: "https://research.birmingham.ac.uk/en/persons/emilie-cosway/" }
+  ]
   },
     {
     title: "Yu Zhang",
@@ -142,18 +152,28 @@ const pastMembers = [
   {
     title: "Dr. Zhen Liu",
     description: "Engineer at WSP",
+    links: [
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/zhen-liu-a30a73262/" }
+  ]
   },
   {
     title: "Dr. Boyang Chen",
     description: "Research Associate, Applied Modelling and Computation Group, Faculty of Engineering, Imperial College London.",
+    links: [
+    { label: "Research Profile", url: "https://profiles.imperial.ac.uk/boyang.chen16" }
+  ]
   },
     {
     title: "Dr. Riza Siregar",
     description: "Lecturer, Faculty of Engineering, Universitas Sumatera Utara.",
+    links: [
+    { label: "Research Profile", url: "https://ft.usu.ac.id/en/lecturer/riza-inanda-siregar#" }
+  ]
   },
     {
     title: "James Howorth",
     description: "MEng student, School of Engineering, University of Birmingham.",
+      
   }
 ];
 
