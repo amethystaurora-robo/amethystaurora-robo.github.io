@@ -19,7 +19,7 @@ Check out projects and publications below to learn more, and get in touch if you
 <figure class="hero-figure">
   <img
     class="hero-image"
-    src="../images/github1.jpg"
+    src="images/github1.jpg"
     alt="Particles dispersing in a turbulent exhalation jet during speaking"
   >
   <figcaption>
@@ -54,7 +54,7 @@ members: `
     </section>
 
     <figure class="member-section-image">
-      <img src="../images/github7.jpg" alt="Current members of the team">
+      <img src="images/github7.jpg" alt="Current members of the team">
       <figcaption>Caption for the current members photo.</figcaption>
     </figure>
 
@@ -63,7 +63,7 @@ members: `
       <div class="card-grid" id="past-members-list"></div>
 
       <figure class="member-section-image">
-      <img src="../images/github8.jpg" alt="Past members of the team">
+      <img src="images/github8.jpg" alt="Past members of the team">
       <figcaption>Caption for the past members photo.</figcaption>
       </figure>
     </section>
@@ -78,7 +78,7 @@ const projects = [
   {
     title: "BreatHE IN",
     description: "Funded by EPSRC, BreatHE IN will focus on improvements to the built environment in both existing and new buildings. Officially launched in November 2025, BreatHE IN is led by the University of Birmingham and supported by partners including Oxford, Cardiff, Nottingham, UCL, Bath, the UKHSA, Hertfordshire County Council, Siemens, ANSYS, BIOREME and the Met Office. The push towards airtight indoor spaces, to preserve energy and isolate us from the outside weather and noise, can also have undesired consequences. BreatHE IN provides a platform and resources to facilitate the interaction between researchers and stakeholders from different disciplines and sectors and to train the new generation of experts to design healthier indoor environments. BreatHE IN hosted its first interdisciplinary sandpit on Wednesday 29 April at the University of Birmingham, bringing together 75 participants from across the UK, including researchers, industry professionals and public contributors from diverse disciplines, reflecting a commitment to integrating knowledge across sectors to address complex challenges in indoor air quality and the built environment. A total of 25 feasibility funding applications were submitted following the sandpit, competing for a £129k in flexible funding..",
-    image: "../images/github2.jpg",
+    image: "images/github2.jpg",
     alt: "A group photo from the BreatHE IN sandpit on 29th April 2026.",
     caption: "BreatHE IN sandpit on 29th April 2026.",
     links: [
@@ -88,7 +88,7 @@ const projects = [
     {
     title: "Fusion Forest",
     description: "Fusion Forest will provide strategies and tools to enhance the natural immunity of forests and halt tree epidemics. We combine knowledge on tree immunity with ecology and physics. We will increase forest resilience by proposing combinations of tree species and priming of defence. We will bring together ecological and physical modelling to create a tool – ForestFlow – to predict the spread of fungal spores and design physical barriers to it. The decisions we make today will determine the forest landscapes of future generations. Fusion Forest will prevent high disease pressures and enhance tree immunity ahead of the occurrence of outbreaks.",
-    image: "../images/github3.jpg",
+    image: "images/github3.jpg",
     alt: "A Schematic vision for Fusion Forest, showing a plan for disease suppression in forests by enhancing tree immunity, reducing disease pressure, and designing barriers to pathogens.",
     caption: "A schematic vision for Fusion Forest."
   },
@@ -99,7 +99,7 @@ const projects = [
     {
     title: "IAQ-EMS",
     description: `Led by Prof Christian Pfrang, the project "Indoor Air Quality Emissions & Modelling System (IAQ-EMS)" aims to develop ambitious software and data tools to advance the UK's capacity for indoor air quality modelling, for estimation of emissions and exposure.`,
-    image: "../images/github3.png",
+    image: "images/github3.png",
     alt: "The graphic shows air flow in different ventilation scenarios: unventilated, natural ventilation and mechanical extraction.",
     caption: "ChemFlow3D solves explicitly basic chemical reactions as the fluid flow evolves in space in time. It is built on the MultiFlow3D engine."
   }
@@ -110,7 +110,7 @@ const currentMembers = [
   {
     title: "Dr. Bruño Fraga",
     description: "Associate Professor, School of Engineering, University of Birmingham.",
-    image: "../images/github4.png",
+    image: "images/github4.png",
     alt: "Portrait of Bruño Fraga",
     links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/bru%C3%B1o-fraga-a574795b/" },
@@ -120,7 +120,7 @@ const currentMembers = [
   {
     title: "Dr. Aleksandra Monka",
     description: "Research Associate, School of Engineering, University of Birmingham",
-    image: "../images/github5.png",
+    image: "images/github5.png",
     alt: "Portrait of Aleksandra Monka",
     links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/aleksandra-monka-41115331b/" }
