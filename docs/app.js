@@ -18,7 +18,7 @@ Check out projects and publications below to learn more, and get in touch if you
 
       <img
         class="hero-image"
-        src="images/Pic_1.jpg"
+        src="../images/Pic_1.jpg"
         alt="Expiratory particle dispersion by turbulent exhalation jet during speaking made by <a href="https://www.linkedin.com/in/aleksandra-monka-41115331b/">Aleksandra Monka</a>"
       >  <figcaption>
     Expiratory particle dispersion by turbulent exhalation jet during speaking.
@@ -55,9 +55,9 @@ Check out projects and publications below to learn more, and get in touch if you
 // Image paths are relative to index.html.
 const projects = [
   {
-    title: "Project One",
-    description: "Describe your project, its purpose, and what your team achieved.",
-    image: "images/project-1.jpg",
+    title: "BreatHE IN",
+    description: "Funded by EPSRC, BreatHE IN will focus on improvements to the built environment in both existing and new buildings. Officially launched in November 2025, BreatHE IN is led by the University of Birmingham and supported by partners including Oxford, Cardiff, Nottingham, UCL, Bath, the UKHSA, Hertfordshire County Council, Siemens, ANSYS, BIOREME and the Met Office. The push towards airtight indoor spaces, to preserve energy and isolate us from the outside weather and noise, can also have undesired consequences. BreatHE IN provides a platform and resources to facilitate the interaction between researchers and stakeholders from different disciplines and sectors and to train the new generation of experts to design healthier indoor environments. BreatHE IN hosted its first interdisciplinary sandpit on Wednesday 29 April at the University of Birmingham, bringing together 75 participants from across the UK, including researchers, industry professionals and public contributors from diverse disciplines, reflecting a commitment to integrating knowledge across sectors to address complex challenges in indoor air quality and the built environment. A total of 25 feasibility funding applications were submitted following the sandpit, competing for a £129k in flexible funding..",
+    image: "../images/github2.jpg",
     alt: "Describe the project image"
   }
 ];
