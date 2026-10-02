@@ -192,7 +192,7 @@ h1 {
 }
 
 .site-footer {
-  padding: 26px clamp(20px, 6vw, 88px);
+  padding: 26px clamp(24px, 6vw, 88px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,18 +210,36 @@ h1 {
 
 .footer-links {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
 }
 
 .footer-links a {
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
 }
 
 .footer-links a:hover {
-  color: var(--primary);
-  text-decoration: underline;
+  background: var(--accent);
 }
+
+.footer-links img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-links a:focus-visible {
+  outline: 3px solid #f0b44d;
+  outline-offset: 3px;
+}
+
 
 @media (max-width: 700px) {
   .site-header {
