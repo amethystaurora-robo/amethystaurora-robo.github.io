@@ -446,6 +446,19 @@ h1 {
   }
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.card-links a {
+  color: #145a8d;
+  text-decoration: underline;
+}
+
+
 
 
 
