@@ -247,3 +247,15 @@ h1 {
     flex-direction: column;
   }
 }
+
+.hero-figure {
+  margin: 0;
+}
+
+.hero-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
