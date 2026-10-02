@@ -99,7 +99,7 @@ const projects = [
     {
     title: "IAQ-EMS",
     description: `Led by Prof Christian Pfrang, the project "Indoor Air Quality Emissions & Modelling System (IAQ-EMS)" aims to develop ambitious software and data tools to advance the UK's capacity for indoor air quality modelling, for estimation of emissions and exposure.`,
-    image: "images/github3.png",
+    image: "images/github4.png",
     alt: "The graphic shows air flow in different ventilation scenarios: unventilated, natural ventilation and mechanical extraction.",
     caption: "ChemFlow3D solves explicitly basic chemical reactions as the fluid flow evolves in space in time. It is built on the MultiFlow3D engine."
   }
@@ -110,7 +110,7 @@ const currentMembers = [
   {
     title: "Dr. Bruño Fraga",
     description: "Associate Professor, School of Engineering, University of Birmingham.",
-    image: "images/github4.png",
+    image: "images/github5.png",
     alt: "Portrait of Bruño Fraga",
     links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/bru%C3%B1o-fraga-a574795b/" },
@@ -120,7 +120,7 @@ const currentMembers = [
   {
     title: "Dr. Aleksandra Monka",
     description: "Research Associate, School of Engineering, University of Birmingham",
-    image: "images/github5.png",
+    image: "images/github6.png",
     alt: "Portrait of Aleksandra Monka",
     links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/aleksandra-monka-41115331b/" }
