@@ -1,8 +1,8 @@
 const pages = {
   home: `
-    <section class="hero page-section">
-      <div class="hero-text">
-        <p class="eyebrow">Welcome</p>
+    <section class="page-section">
+      <div class="section-headingt">
+        <h1>">Welcome</h1>
         <p>
 xFlow is a research group led by Dr Bruño Fraga whose focus is modelling complex flows for environmental and healthcare applications.
 We develop in-house algorithms and numerical models to solve multiphase flows, with a particular emphasis in particle-laden or dispersed flows, where one of the phases is split in many small portions and submerged in a fluid matrix. We have a solid track record creating models for fluid-solid interaction, four-way coupled particle-laden flows, Eulerian-Lagrangian frameworks or chemistry-fluids coupling among other things. In terms of applications, some key current topics are the spread of expiratory bioaerosols, transport of microplastics in freshwater systems, flow through porous media, multiphase turbulence and bubble plume dynamics.
@@ -35,7 +35,6 @@ Check out projects and publications below to learn more, and get in touch if you
   projects: `
     <section class="page-section">
       <div class="section-heading">
-        <p class="eyebrow">What we do</p>
         <h1>Research Projects</h1>
       </div>
       <div class="card-grid" id="projects-list"></div>
