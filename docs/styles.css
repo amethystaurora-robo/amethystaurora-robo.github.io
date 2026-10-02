@@ -350,6 +350,24 @@ h1 {
     max-height: 280px;
     border-radius: 12px;
   }
+
+  .member-section-image {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.member-section-image img {
+  display: block;
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.member-section-image figcaption {
+  margin-top: 0.5rem;
+}
 }
 
 
