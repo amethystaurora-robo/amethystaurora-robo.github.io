@@ -67,6 +67,7 @@ members: `
       <figure class="member-section-image">
       <img src="../images/github7.jpg" alt="Past members of the team">
       <figcaption>Caption for the past members photo.</figcaption>
+      </figure>
     </section>
   </section>
 `
