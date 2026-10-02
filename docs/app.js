@@ -134,15 +134,15 @@ const past-members-list = [
   },
   {
     title: "Dr. Boyang Chen",
-    description: "Add this member's role or a short biography.",
+    description: "Research Associate, Applied Modelling and Computation Group, Faculty of Engineering, Imperial College London.",
   },
     {
     title: "Dr. Riza Siregar",
-    description: "Add this member's role or a short biography.",
+    description: "Lecturer, Faculty of Engineering, Universitas Sumatera Utara.",
   },
     {
     title: "James Howorth",
-    description: "Add this member's role or a short biography.",
+    description: "MEng student, School of Engineering, University of Birmingham.",
   }
 ];
 
