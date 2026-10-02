@@ -19,7 +19,7 @@ Check out projects and publications below to learn more, and get in touch if you
 <figure class="hero-figure">
   <img
     class="hero-image"
-    src="images/github1.jpg"
+    src="../images/github1.jpg"
     alt="Particles dispersing in a turbulent exhalation jet during speaking"
   >
   <figcaption>
@@ -54,7 +54,7 @@ members: `
     </section>
 
     <figure class="member-section-image">
-      <img src="../images/github8.jpg" alt="Current members of the team">
+      <img src="../images/github7.jpg" alt="Current members of the team">
       <figcaption>Caption for the current members photo.</figcaption>
     </figure>
 
@@ -63,7 +63,7 @@ members: `
       <div class="card-grid" id="past-members-list"></div>
 
       <figure class="member-section-image">
-      <img src="../images/github7.jpg" alt="Past members of the team">
+      <img src="../images/github8.jpg" alt="Past members of the team">
       <figcaption>Caption for the past members photo.</figcaption>
       </figure>
     </section>
@@ -80,7 +80,10 @@ const projects = [
     description: "Funded by EPSRC, BreatHE IN will focus on improvements to the built environment in both existing and new buildings. Officially launched in November 2025, BreatHE IN is led by the University of Birmingham and supported by partners including Oxford, Cardiff, Nottingham, UCL, Bath, the UKHSA, Hertfordshire County Council, Siemens, ANSYS, BIOREME and the Met Office. The push towards airtight indoor spaces, to preserve energy and isolate us from the outside weather and noise, can also have undesired consequences. BreatHE IN provides a platform and resources to facilitate the interaction between researchers and stakeholders from different disciplines and sectors and to train the new generation of experts to design healthier indoor environments. BreatHE IN hosted its first interdisciplinary sandpit on Wednesday 29 April at the University of Birmingham, bringing together 75 participants from across the UK, including researchers, industry professionals and public contributors from diverse disciplines, reflecting a commitment to integrating knowledge across sectors to address complex challenges in indoor air quality and the built environment. A total of 25 feasibility funding applications were submitted following the sandpit, competing for a £129k in flexible funding..",
     image: "../images/github2.jpg",
     alt: "A group photo from the BreatHE IN sandpit on 29th April 2026.",
-    caption: "BreatHE IN sandpit on 29th April 2026."
+    caption: "BreatHE IN sandpit on 29th April 2026.",
+    links: [
+    { label: "Project Website", url: "https://www.breathe-in.co.uk/" }
+  ]
   },
     {
     title: "Fusion Forest",
