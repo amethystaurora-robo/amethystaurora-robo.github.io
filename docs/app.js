@@ -189,10 +189,21 @@ function createCards(items) {
       <div class="card-content">
         <h2>${item.title}</h2>
         <p>${item.description}</p>
+
+        ${item.links?.length ? `
+          <div class="card-links">
+            ${item.links.map(link => `
+              <a href="${link.url}" target="_blank" rel="noopener noreferrer">
+                ${link.label}
+              </a>
+            `).join("")}
+          </div>
+        ` : ""}
       </div>
     </article>
   `).join("");
 }
+
 
 function renderProjects() {
   const container = document.getElementById("projects-list");
