@@ -3,11 +3,10 @@ const pages = {
     <section class="hero page-section">
       <div class="hero-text">
         <p class="eyebrow">Welcome</p>
-        <h1>Ideas, people, and projects making a difference.</h1>
         <p>
-          Add a short introduction to your team, research group, club, or
-          organization here. Tell visitors what you do and what makes your
-          work special.
+xFlow is a research group led by Dr Bruño Fraga whose focus is modelling complex flows for environmental and healthcare applications.
+We develop in-house algorithms and numerical models to solve multiphase flows, with a particular emphasis in particle-laden or dispersed flows, where one of the phases is split in many small portions and submerged in a fluid matrix. We have a solid track record creating models for fluid-solid interaction, four-way coupled particle-laden flows, Eulerian-Lagrangian frameworks or chemistry-fluids coupling among other things. In terms of applications, some key current topics are the spread of expiratory bioaerosols, transport of microplastics in freshwater systems, flow through porous media, multiphase turbulence and bubble plume dynamics.
+Check out projects and publications below to learn more, and get in touch if you want to try our base model, MultiFlow3D.
         </p>
         <button class="primary-button" type="button" data-page="projects">
           Explore our projects
@@ -16,9 +15,13 @@ const pages = {
 
       <img
         class="hero-image"
-        src="images/home.jpg"
-        alt="Describe your home page image"
-      >
+        src="images/Pic_1.jpg"
+        alt="Expiratory particle dispersion by turbulent exhalation jet during speaking made by Aleksandra Monka"
+      >  <figcaption>
+    Expiratory particle dispersion by turbulent exhalation jet during speaking.
+    Image by Aleksandra Monka.
+  </figcaption>
+</figure>
     </section>
   `,
 
