@@ -44,7 +44,6 @@ members: `
     <div class="section-heading">
       <p class="eyebrow">The people behind the work</p>
       <h1>Meet Our Members</h1>
-      <p>Add a short introduction to your team here.</p>
     </div>
 
     <section>
@@ -52,9 +51,18 @@ members: `
       <div class="card-grid" id="current-members-list"></div>
     </section>
 
+    <figure class="member-section-image">
+      <img src="../images/github8.jpg" alt="Current members of the team">
+      <figcaption>Caption for the current members photo.</figcaption>
+    </figure>
+
     <section>
       <h2>Past Members</h2>
       <div class="card-grid" id="past-members-list"></div>
+
+      <figure class="member-section-image">
+      <img src="../images/github7.jpg" alt="Past members of the team">
+      <figcaption>Caption for the past members photo.</figcaption>
     </section>
   </section>
 `
