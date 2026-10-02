@@ -92,18 +92,57 @@ const projects = [
 ];
 
 // Add or edit team members here.
-const members = [
+const current-members-list = [
   {
-    title: "Member Name",
-    description: "Add a role, area of expertise, or short biography.",
-    image: "images/member-1.jpg",
-    alt: "Portrait of Member Name"
+    title: "Dr. Bruño Fraga",
+    description: "Associate Professor, School of Engineering, University of Birmingham.",
+    image: "../images/github4.jpg",
+    alt: "Portrait of Bruño Fraga"
   },
   {
-    title: "Another Member",
+    title: "Dr. Aleksandra Monka",
+    description: "Research Associate, School of Engineering, University of Birmingham",
+    image: "../images/github5.jpg",
+    alt: "Portrait of Aleksandra Monka"
+  },
+    {
+    title: "Dr. Emilie Cosway",
+    description: "Network Manager, School of Engineering, University of Birmingham"
+  },
+    {
+    title: "Yu Zhang",
+    description: "PhD student, School of Engineering, University of Birmingham",
+  },
+    {
+    title: "Fuad Alqrinawi",
+    description: "PhD student, School of Geography, Environmental and Earth Sciences, University of Birmingham",
+  },
+    {
+    title: "Zijian Chen",
+    description: "PhD student, School of Geography, Environmental and Earth Sciences, University of Birmingham",
+  },
+  {
+    title: "Niloofar Mohammadzadeh ",
+    description: "PhD student, School of Engineering, University of Birmingham",
+  }
+];
+
+const past-members-list = [
+  {
+    title: "Dr. Zhen Liu",
+    description: "Engineer at WSP",
+  },
+  {
+    title: "Dr. Boyang Chen",
     description: "Add this member's role or a short biography.",
-    image: "images/member-2.jpg",
-    alt: "Portrait of Another Member"
+  },
+    {
+    title: "Dr. Riza Siregar",
+    description: "Add this member's role or a short biography.",
+  },
+    {
+    title: "James Howorth",
+    description: "Add this member's role or a short biography.",
   }
 ];
 
