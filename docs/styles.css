@@ -370,5 +370,38 @@ h1 {
 }
 }
 
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-image {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 auto;
+}
+
+.project-description {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .project-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+  }
+}
+
+
 
 
