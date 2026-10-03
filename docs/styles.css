@@ -83,14 +83,6 @@ a:focus-visible {
   padding: 72px 0;
 }
 
-.hero {
-  min-height: 570px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: clamp(32px, 6vw, 76px);
-}
-
 .hero-text {
   max-width: 570px;
 }
@@ -121,14 +113,6 @@ h1 {
 .section-heading > p:last-child {
   color: var(--muted);
   font-size: 1.08rem;
-}
-
-.hero-image {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
-  border-radius: 24px;
-  box-shadow: var(--shadow);
 }
 
 .primary-button {
@@ -242,18 +226,6 @@ h1 {
 
 
 @media (max-width: 700px) {
-  .member-section-image img {
-    height: 260px;
-  }
-
-  .hero {
-    min-height: auto;
-    grid-template-columns: 1fr;
-  }
-
-  .hero-image {
-    height: 280px;
-  }
 
   .page-section {
     padding: 48px 0;
@@ -282,56 +254,13 @@ h1 {
   gap: 1.5rem;
 }
 
-.project-row {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.25rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-/* Project images: consistent thumbnail box, with the full image visible */
-.project-image {
-  width: 220px;
-  height: 150px;
-  object-fit: contain;
-  background: var(--accent);
-  border-radius: 12px;
-  flex: 0 0 auto;
-}
-
 .project-details {
   flex: 1;
 }
 
-@media (max-width: 600px) {
-  .project-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
 }
 
 /* Member group photos: fixed-height box, cropped neatly */
-.member-section-image img {
-  display: block;
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 18px;
-}
-
-.member-section-image img {
-  display: block;
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
-}
 
 .member-section-image figcaption {
   margin-top: 0.75rem;
@@ -346,23 +275,9 @@ h1 {
     padding: 0;
   }
 
-  .member-section-image img {
-    max-height: 280px;
-    border-radius: 12px;
-  }
-
   .member-section-image {
   text-align: center;
   margin: 2rem auto;
-}
-
-.member-section-image img {
-  display: block;
-  width: 160px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin: 0 auto;
 }
 
 .member-section-image figcaption {
@@ -370,36 +285,8 @@ h1 {
 }
 }
 
-.project-row {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.project-image {
-  width: 220px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-  flex: 0 0 auto;
-}
-
 .project-description {
   flex: 1;
-}
-
-@media (max-width: 700px) {
-  .project-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-image {
-    width: 100%;
-    height: auto;
-    max-width: 360px;
-  }
 }
 
 .home-hero {
@@ -456,6 +343,137 @@ h1 {
 .card-links a {
   color: #145a8d;
   text-decoration: underline;
+}
+
+/* Homepage: text on the left, complete image on the right */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 390px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Projects: image on the left, complete image visible */
+#projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.project-image {
+  display: block;
+  flex: 0 0 360px;
+  width: 360px;
+  height: 260px;
+  object-fit: contain;
+  background: var(--accent);
+  border-radius: 12px;
+}
+
+.project-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-details h3 {
+  margin-top: 0;
+}
+
+/* Member portraits: show the upper part of each face */
+#current-members-list .card img,
+#past-members-list .card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 20%;
+  background: var(--accent);
+}
+
+/* Member section group photos */
+.member-section-image {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.member-section-image img {
+  display: block;
+  width: min(100%, 700px);
+  max-height: 420px;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+
+.member-section-image figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    height: auto;
+    max-height: 360px;
+  }
+
+  .project-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-image {
+    flex: none;
+    width: 100%;
+    height: 260px;
+  }
+
+  .member-section-image img {
+    max-height: 280px;
+  }
 }
 
 
