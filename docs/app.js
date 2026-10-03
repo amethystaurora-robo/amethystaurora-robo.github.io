@@ -1,36 +1,38 @@
 const pages = {
-  home: `
-    <section class="page-section">
-      <div class="section-headingt">
+home: `
+  <section class="page-section">
+    <div class="hero">
+      <div class="hero-text">
         <h1>Welcome</h1>
         <p>
-xFlow is a research group led by Dr Bruño Fraga whose focus is modelling complex flows for environmental and healthcare applications.
-We develop in-house algorithms and numerical models to solve multiphase flows, with a particular emphasis in particle-laden or dispersed flows, where one of the phases is split in many small portions and submerged in a fluid matrix. We have a solid track record creating models for fluid-solid interaction, four-way coupled particle-laden flows, Eulerian-Lagrangian frameworks or chemistry-fluids coupling among other things. In terms of applications, some key current topics are the spread of expiratory bioaerosols, transport of microplastics in freshwater systems, flow through porous media, multiphase turbulence and bubble plume dynamics.
-Check out projects and publications below to learn more, and get in touch if you want to try our base model, MultiFlow3D.
+          xFlow is a research group led by Dr Bruño Fraga whose focus is modelling complex flows for environmental and healthcare applications.
+          We develop in-house algorithms and numerical models to solve multiphase flows, with a particular emphasis in particle-laden or dispersed flows, where one of the phases is split in many small portions and submerged in a fluid matrix. We have a solid track record creating models for fluid-solid interaction, four-way coupled particle-laden flows, Eulerian-Lagrangian frameworks or chemistry-fluids coupling among other things. In terms of applications, some key current topics are the spread of expiratory bioaerosols, transport of microplastics in freshwater systems, flow through porous media, multiphase turbulence and bubble plume dynamics.
+          Check out projects and publications below to learn more, and get in touch if you want to try our base model, MultiFlow3D.
         </p>
         <button class="primary-button" type="button" data-page="projects">
           Explore our projects
         </button>
-        <button class="primary-button" type="button" data-page="projects">
+        <button class="primary-button" type="button" data-page="members">
           Meet the Team
         </button>
       </div>
 
-<figure class="hero-figure">
-  <img
-    class="hero-image"
-    src="images/github1.jpg"
-    alt="Particles dispersing in a turbulent exhalation jet during speaking"
-  >
-  <figcaption>
-    Expiratory particle dispersion by turbulent exhalation jet during speaking.
-    Image by <a href="https://www.linkedin.com/in/aleksandra-monka-41115331b/"
-      target="_blank" rel="noopener noreferrer">Aleksandra Monka</a>.
-  </figcaption>
-</figure>
+      <figure class="hero-figure">
+        <img
+          class="hero-image"
+          src="images/github1.jpg"
+          alt="Particles dispersing in a turbulent exhalation jet during speaking"
+        >
+        <figcaption>
+          Expiratory particle dispersion by turbulent exhalation jet during speaking.
+          Image by <a href="https://www.linkedin.com/in/aleksandra-monka-41115331b/"
+            target="_blank" rel="noopener noreferrer">Aleksandra Monka</a>.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+`,
 
-    </section>
-  `,
 
   projects: `
     <section class="page-section">
