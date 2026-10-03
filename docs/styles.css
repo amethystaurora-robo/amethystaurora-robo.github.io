@@ -477,6 +477,44 @@ h1 {
   }
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color, #245b78);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links img,
+.footer-links svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Theme-matched hover */
+.footer-links a:hover {
+  color: var(--accent-color, #245b78);
+  transform: translateY(-2px);
+}
+
+.footer-links a:hover img,
+.footer-links a:hover svg {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+
 
 
 
