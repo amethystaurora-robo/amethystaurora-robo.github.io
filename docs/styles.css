@@ -276,7 +276,6 @@ h1 {
 
 .member-section-image {
   display: block;
-  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -431,7 +430,6 @@ h1 {
 
 /* Member section group photos */
 .member-section-image {
-  margin: 2rem auto;
   text-align: center;
 }
 
@@ -441,7 +439,6 @@ h1 {
   max-height: 420px;
   margin: 0 auto;
   object-fit: contain;
-  border-radius: 16px;
   box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
 }
 
