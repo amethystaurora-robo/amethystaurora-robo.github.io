@@ -1,3 +1,9 @@
+//layout of Home, Members, and Projects Pages
+//add a button in line 23 to have a link to publications if desired
+//Line 29 can be edited by adding a video file instead of a jpg, after uploading the video in the images folder
+//Need to add photo captions on members page, with members' names, lines 65 and 74
+//Can add links/photos (example: ORCID) for projects in const projects[] list, same for members, starting at lines 84 and 116
+//Currently link to Youtube in footer is broken, update following comments in index.html
 const pages = {
 home: `
   <section class="page-section">
